@@ -56,7 +56,6 @@ int main(int argc, char* argv[]) {
     SDL_Color color_white = {255, 255, 255, 255};
     SDL_Color color_yellow = {255, 255, 0, 255};
     SDL_Color color_black = {0, 0, 0, 255};
-    SDL_Color color_red = {255, 0, 0, 255};
 
     // スタート画面の固定テキストの準備
     load_text(
@@ -269,7 +268,7 @@ int main(int argc, char* argv[]) {
                     state = DEALER_OPEN; 
                 }
             } else if (state == DEALER_OPEN) {
-                bool all_opened;
+                bool all_opened = true;
 
                 Hand* tmp = dealer_hand;
                 while (tmp != NULL) {

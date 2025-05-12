@@ -1,6 +1,6 @@
 # BlackJack-C
 
-このプロジェクトは、以前Javaを使用して制作したブラックジャックのゲームを、C言語学習のために作り直したものになります。今後もアップデート予定です。
+このプロジェクトは、以前Javaを使用して制作したブラックジャックのゲームを、C言語学習のためにSDL2を使用して作り直したものになります。今後もアップデート予定です。
 
 Java版はこちらです→[BruCandy/BlackJack](https://github.com/BruCandy/BlackJack)
 
@@ -24,7 +24,24 @@ Java版はこちらです→[BruCandy/BlackJack](https://github.com/BruCandy/Bla
   - `types.h` : 様々な列挙型、構造体を定義
 
 ## 実装方法
+Ubuntu 22.04にて動作の確認を行いました。以下の手順で実行が可能です。
 
+### 1.必要なライブラリのインストール
+```bash
+sudo apt update
+sudo apt install build-essential libsdl2-dev libsdl2-image-dev libsdl2-ttf-dev
+```
+
+### 2.ビルドと実行
+```bash
+make        # ビルド
+./blackjack # 実行
+```
+
+### 3.クリーン
+```bash
+make clean
+```
 
 ## 実装結果
 
